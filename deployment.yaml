@@ -6,14 +6,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: addressbook
+      app: sampleapp
   template:
     metadata:
       labels:
-        app: addressbook
+        app: sampleapp
     spec:
       containers:
-        - name: addressbook-container
+        - name: sampleapp-container
           image: rizvana13/sampleapp:0.1
           ports:
             - containerPort: 8080
